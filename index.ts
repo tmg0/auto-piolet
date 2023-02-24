@@ -25,16 +25,18 @@ v.addListener(({ name }) => {
   if (name === Keyboard.SPACE) { toggle() }
 })
 
-// g.connect()
+g.connect()
+g.forceConstant(-0.5, -180)
 
-setInterval(() => {
-  if (!isRunning) {
-    // g.autoCenterOn()
-    // g.forceOff()
-    return
-  }
 
-  consola.info('Running...')
-  // g.forceConstant(-0.5, -180)
-  // g.forceConstant(-0.5, 180)
-}, 50)
+// setInterval(() => {
+//   if (!isRunning) {
+//     // g.autoCenterOn()
+//     // g.forceOff()
+//     return
+//   }
+
+//   consola.info('Running...')
+//   // g.forceConstant(-0.5, -180)
+//   // g.forceConstant(-0.5, 180)
+// }, 50)
